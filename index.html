@@ -13,13 +13,14 @@
   <link rel="stylesheet" href="css/mainstyle.css" />
 
   <!--Favicon for browser tab-->
-  <link rel="shortcut icon" href="img/test.png" />
+  <link rel="shortcut icon" href="image/icon.png" />
 
-  <!--Icons for Web-->
-  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <!--JS-->
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/scrolling.js"></script>
 
   <!--SEO-->
-  <meta name="description" content="Learn about the history of Zenith and how it all started.">
+  <meta name="description" content="The portfolio site of John Leong">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
@@ -33,11 +34,11 @@
 
         <div class="collapse navbar-collapse justify-content-center order-2" id="navbarSupportedContent">
           <ul class="navbar-nav navbar-left">
-            <li class="nav-item"><a class="nav-link" href="#aboutme">ABOUT ME</a></li>
-            <li class="nav-item"><a class="nav-link" href="#skills">SKILLS</a></li>
-            <li class="nav-item"><a class="nav-link" href="#projects">PROJECTS</a></li>
-            <li class="nav-item"><a class="nav-link" href="#experience">EXPERIENCE</a></li>
-            <li class="nav-item"><a class="nav-link" href="#contact">CONTACT</a></li>
+            <li class="nav-item"><a class="nav-link" onclick="ScrollToTarget('aboutme')">ABOUT ME</a></li>
+            <li class="nav-item"><a class="nav-link" onclick="ScrollToTarget('skills')">SKILLS</a></li>
+            <li class="nav-item"><a class="nav-link" onclick="ScrollToTarget('projects')">PROJECTS</a></li>
+            <li class="nav-item"><a class="nav-link" onclick="ScrollToTarget('experience')">EXPERIENCE</a></li>
+            <li class="nav-item"><a class="nav-link" onclick="ScrollToTarget('contact')">CONTACT</a></li>
           </ul>
         </div>
       </div>
@@ -50,6 +51,9 @@
       <div class="info">
         <h1>Hello there!</h1>
         <h4>John Leong • Software Engineer</h4>
+        <br />
+        <p>Welcome to my portfolio website! Feel free to take a look around!</p>
+        <br />
       </div>
     </section>
 
@@ -60,9 +64,11 @@
           <h2>About Me</h2>
         </div>
         <div class="col-md-8">
-          <p class="info-box">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis
-            aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <div class="info-box">
+            <p>Hi! I'm currently a software engineering student studying at the Singapore Institute of Technology. I've created and programmed a variety of different applications and software over the years, some of which can be seen below!</p>
+            <br />
+            <p>I also enjoy programming games for PC and mobile, regularly joining game jams to test my skills and make to something new! I have done several freelance projects as well, including web and mobile applications.</p>
+          </div>
         </div>
       </div>
       <hr>
@@ -84,6 +90,7 @@
               <li>Python</li>
               <li>Java</li>
               <li>Php</li>
+              <li>SQL</li>
               <li>Assembly</li>
             </ul>
           </div>
@@ -109,6 +116,7 @@
               <li>Status tracking tools</li>
               <li>Data structures & algorithms</li>
               <li>Object-oriented programming</li>
+              <li>OpenGL</li>
             </ul>
           </div>
         </div>
@@ -124,17 +132,57 @@
         </div>
         <div class="col-md-8">
           <div class="info-box">
-            <p>Here are some of my past projects that i worked on! They include both freelance work and personal projects that I did in my free time</p>
+            <p>Here are some of my past projects that i worked on! They include both freelance work and personal projects that I did in my free time.</p>
+            <p>Click the project thumbnails to see more info!</p>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="info row row-no-margin">
+          <div class="col-md-3 col-sm-4 col-6 col-centered">
+            <img id="project-narcaution-thumbnail" src="image/thumbnail_narcaution.png" class="project-thumbnail project-thumbnail-selected" alt="Central Narcotic Bureau Project" onclick="ShowProjectItem('project-narcaution')">
+          </div>
+          <div class="col-md-3 col-sm-4 col-6 col-centered">
+            <img id="project-jolly-thumbnail" src="image/thumbnail_jolly_jumpers.jpg" class="project-thumbnail" alt="Y8 project" onclick="ShowProjectItem('project-jolly')">
+          </div>
+          <div class="col-md-3 col-sm-4 col-6 col-centered">
+            <img src="image/thumbnail_narcaution.png" class="project-thumbnail">
+          </div>
+          <div class="col-md-3 col-sm-4 col-6 col-centered">
+            <img src="image/thumbnail_narcaution.png" class="project-thumbnail">
+          </div>
+          <div class="col-md-3 col-sm-4 col-6 col-centered">
+            <img src="image/thumbnail_narcaution.png" class="project-thumbnail">
           </div>
         </div>
       </div>
       <div class="info row">
         <div class="col-md-12">
-          <div class="info-box">
-            <h3>Central Narcotics Bureau project</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat. Duis
-              aute irure dolor in reprehenderit in voluptate veli</p>
+          <div id="project-narcaution" class="info-box project-item-main project-item">
+            <h3>Narcaution • Central Narcotics Bureau project</h3>
+            <img src="image/banner_narcaution.jpg" class="project-banner">
+            <br/>
+            <p>An anti-drug game made for the Central Narcotics Bureau to educate youths about the harmful effects of drugs.</p>
+            <p>I worked on the programming of game mechainics and and various game systems, using the Unity engine.</p>
+            <a href="https://www.straitstimes.com/singapore/tapping-tech-to-boost-enforcement" target="_blank">The Straits Times news post</a>
+            <br/>
+            <a href="https://apps.apple.com/us/app/narcaution/id1125912955"  target="_blank">Apple app store page</a>
+          </div>
+          <div id="project-jolly" class="info-box project-item">
+            <h3>Jolly Jumpers • Y8.com project</h3>
+            <img src="image/banner_jolly.jpg" class="project-banner">
+            <br/>
+            <p>A local multiplayer webGL game integrating Y8.com's user account API to allow user's to post their scores to scoreboards and more.</p>
+            <p>This was a freelance project I did that was requested by Y8.com</p>
+            <a href="https://www.y8.com/games/jolly_jumpers" target="_blank">Game link</a>
+          </div>
+          <div id="project-astar" class="info-box project-item">
+            <h3>Astar pathfinding library</h3>
+            <img src="image/banner_jolly.jpg" class="project-banner">
+            <br/>
+            <p>An astar pathfinding library written in C#.</p>
+            <p>The library is heavily optimized to allow for a large amount of pathfinding agents to run simultaneously during run-time</p>
+            <a href="https://www.y8.com/games/jolly_jumpers" target="_blank">Game link</a>
           </div>
         </div>
       </div>
@@ -200,5 +248,18 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </body>
+<!--
+Hi there! Thanks for looking through my website! Heres a dog
+░▄▀▄▀▀▀▀▄▀▄░░░░░░░░░
+░█░░░░░░░░▀▄░░░░░░▄░
+█░░▀░░▀░░░░░▀▄▄░░█░█
+█░▄░█▀░▄░░░░░░░▀▀░░█
+█░░▀▀▀▀░░░░░░░░░░░░█
+█░░░░░░░░░░░░░░░░░░█
+█░░░░░░░░░░░░░░░░░░█
+░█░░▄▄░░▄▄▄▄░░▄▄░░█░
+░█░▄▀█░▄▀░░█░▄▀█░▄▀░
+░░▀░░░▀░░░░░▀░░░▀░░░
+-->
 
 </html>
