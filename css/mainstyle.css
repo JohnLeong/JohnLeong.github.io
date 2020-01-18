@@ -87,6 +87,13 @@ section{
   margin-right: 30px;
 }
 
+@media (max-width: 576px){
+  .row{
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+
 .row-no-margin{
   margin-left: 0px;
   margin-right: 0px;
@@ -156,6 +163,21 @@ hr {
 .project-banner{
   max-width: 100%;
   width: 600px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.project-banner-small{
+  max-width: 100%;
+  width: 300px;
+  display: inline;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.project-video{
+  max-width: 100%;
   display: block;
   margin-left: auto;
   margin-right: auto;
