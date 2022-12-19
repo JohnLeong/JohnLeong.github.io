@@ -39,6 +39,7 @@
             <li class="nav-item"><a class="nav-link" onclick="ScrollToTarget('aboutme')">ABOUT ME</a></li>
             <li class="nav-item"><a class="nav-link" onclick="ScrollToTarget('skills')">SKILLS</a></li>
             <li class="nav-item"><a class="nav-link" onclick="ScrollToTarget('projects')">PROJECTS</a></li>
+            <li class="nav-item"><a class="nav-link" onclick="ScrollToTarget('education')">EDUCATION</a></li>
             <li class="nav-item"><a class="nav-link" onclick="ScrollToTarget('experience')">EXPERIENCE</a></li>
             <li class="nav-item"><a class="nav-link" onclick="ScrollToTarget('contact')">CONTACT</a></li>
           </ul>
@@ -67,7 +68,7 @@
         </div>
         <div class="col-md-8">
           <div class="info-box animated">
-            <p>Hi! I'm currently a software engineering student studying at the Singapore Institute of Technology. I've created and programmed a variety of different applications and software over the years, some of which can be seen below!</p>
+            <p>Hi! I'm a software engineering student studying at the Singapore Institute of Technology. I've created and programmed a variety of different applications and software over the years, some of which can be seen below!</p>
             <br />
             <p>I also enjoy programming games for PC and mobile, regularly joining game jams to test my skills and make to something new! I have done several freelance projects as well, including web and mobile applications.</p>
           </div>
@@ -86,13 +87,13 @@
           <div class="info-box animated">
             <h6>Languages</h6>
             <ul>
-              <li>C++</li>
               <li>C#</li>
-              <li>C</li>
+              <li>Javascript / Typescript</li>
               <li>Python</li>
               <li>Java</li>
+              <li>C++</li>
+              <li>C</li>
               <li>Php</li>
-              <li>SQL</li>
               <li>Assembly</li>
             </ul>
           </div>
@@ -113,9 +114,11 @@
           <div class="info-box animated">
             <h6>Misc</h6>
             <ul>
-              <li>Git</li>
-              <li>Agile/Scrum</li>
-              <li>Status tracking tools</li>
+              <li>Git version control</li>
+              <li>Agile & Scrum methodologies (Certified Professional Scrum Master 1)</li>
+              <li>SQL/NoSQL database management</li>
+              <li>Amazon Web Services</li>
+              <li>Project manage tools</li>
               <li>Data structures & algorithms</li>
               <li>Object-oriented programming</li>
               <li>OpenGL</li>
@@ -139,24 +142,12 @@
           </div>
         </div>
       </div>
-      <div class="container">
-        <div class="info row row-no-margin">
-          <div class="col-md-3 col-sm-4 col-6 col-centered">
-            <img id="project-narcaution-thumbnail" src="image/thumbnail_narcaution.png" alt="Central Narcotic Bureau Project thumbnail" title="Central Narcotic Bureau Project" class="project-thumbnail project-thumbnail-selected animation-fade-in" onclick="ShowProjectItem('project-narcaution')">
-          </div>
-          <div class="col-md-3 col-sm-4 col-6 col-centered">
-            <img id="project-jolly-thumbnail" src="image/thumbnail_jolly_jumpers.jpg" alt="Y8 project thumbnail" title="Y8 project" class="project-thumbnail animation-fade-in" onclick="ShowProjectItem('project-jolly')">
-          </div>
-          <div class="col-md-3 col-sm-4 col-6 col-centered">
-            <img id="project-astar-thumbnail" src="image/thumbnail_astar.png" alt="Astar library project thumbnail" title="C# Astar pathfinding library" class="project-thumbnail animation-fade-in" onclick="ShowProjectItem('project-astar')">
-          </div>
-          <div class="col-md-3 col-sm-4 col-6 col-centered">
-            <img id="project-fiverr-thumbnail" src="image/thumbnail_fiverr.jpg" alt="Fiverr thumbnail" title="Fiverr projects" class="project-thumbnail animation-fade-in" onclick="ShowProjectItem('project-fiverr')">
-          </div>
-          <div class="col-md-3 col-sm-4 col-6 col-centered">
-            <img id="project-cellular-thumbnail" src="image/thumbnail_cellular.jpg" alt="Cellular automata thumbnail" title="Cellular automata" class="project-thumbnail animation-fade-in" onclick="ShowProjectItem('project-cellular')">
-          </div>
-        </div>
+      <div class="thumbnail-container">
+        <img id="project-narcaution-thumbnail" src="image/thumbnail_narcaution.png" alt="Central Narcotic Bureau Project thumbnail" title="Central Narcotic Bureau Project" class="project-thumbnail project-thumbnail-selected animation-fade-in" onclick="ShowProjectItem('project-narcaution')">
+        <img id="project-jolly-thumbnail" src="image/thumbnail_jolly_jumpers.jpg" alt="Y8 project thumbnail" title="Y8 project" class="project-thumbnail animation-fade-in" onclick="ShowProjectItem('project-jolly')">
+        <img id="project-astar-thumbnail" src="image/thumbnail_astar.png" alt="Astar library project thumbnail" title="C# Astar pathfinding library" class="project-thumbnail animation-fade-in" onclick="ShowProjectItem('project-astar')">
+        <img id="project-fiverr-thumbnail" src="image/thumbnail_fiverr.jpg" alt="Fiverr thumbnail" title="Fiverr projects" class="project-thumbnail animation-fade-in" onclick="ShowProjectItem('project-fiverr')">
+        <img id="project-cellular-thumbnail" src="image/thumbnail_cellular.jpg" alt="Cellular automata thumbnail" title="Cellular automata" class="project-thumbnail animation-fade-in" onclick="ShowProjectItem('project-cellular')">
       </div>
       <div class="info row">
         <div class="col-md-12">
@@ -211,6 +202,35 @@
       <hr>
     </section>
 
+    <!-- Education Section  -->
+    <section id="education">
+    <div class="info row">
+        <div class="col-md-3">
+        <h2>Education</h2>
+        </div>
+        <div class="col-md-8">
+        <div class="info-box animated">
+            <h6>Singapore Institute of Technology</h6>
+            <p>Sep 2019 - Dec 2022</p>
+            <p>B.Eng : Information and Communications Technology (Software Engineering)</p>
+            <ul>
+                <li>Awards: Provost's List for Academic Year 2019/2020</li>
+                <li>CGPA: 4.68 (On track for Honours with highest distinction)</li>
+            </ul>
+        </div>
+        <div class="info-box animated">
+            <h6>Nanyang Polytechnic</h6>
+            <p>Apr 2014 - Apr 2017</p>
+            <p>Diploma in Games Development & Technology</p>
+            <ul>
+                <li>Awards: Director's List for Academic Year 2016 / 2017</li>
+            </ul>
+        </div>
+        </div>
+    </div>
+    <hr>
+    </section>
+
     <!-- Experience Section  -->
     <section id="experience">
       <div class="info row">
@@ -219,30 +239,44 @@
         </div>
         <div class="col-md-8">
           <div class="info-box animated">
-            <h6>Singapore Institute of Technology</h6>
-            <p>2019 - present</p>
-            <p>B.Eng : Information and Communications Technology (Software Engineering)</p>
-          </div>
-          <div class="info-box animated">
             <h6>Archer Logic (S) Pte Ltd</h6>
-            <p>2020 - 2022</p>
-            <p>Software Developer (Apprentice)</p>
-            <p>Developed a POS and CRM software using React and ASP.Net</p>
+            <p>May 2020 - Dec 2022</p>
+            <p>Software Developer (Apprentice) - Full Stack</p>
+            <ul>
+                <li>Developed a cloud based point of sales(POS) / customer relationship management system used across multiple countries, collaborating with both local and overseas team members</li>
+                <li>Designed and implemented intuitive customer facing graphical user interfaces using React, increasing user satisfaction and usability</li>
+                <li>Implemented efficient backend REST APIs using ASP.Net Core with unit testing, allowing for scalability, processing of large amounts of data and handling of high server traffic</li>
+                <li>Created automated load testing scripts using Apache Jmeter, ensuring that the servers used are able to handle high amounts of load during busy periods</li>
+                <li>Performed deployments to Amazon Web Services(AWS), providing a user acceptance test environment for stakeholders to test out features and requirements</li>
+                <li>Trained new team members, helping them get accustomed to the team and codebase</li>
+            </ul>
           </div>
           <div class="info-box animated">
-            <h6>Singapore Armed Forces (National Service)</h6>
-            <p>2017 - 2019</p>
-            <p>Maintenance Engineering Support - Electronics Technician</p>
+            <h6>Freelance Programmer</h6>
+            <p>Jan 2017 - Present</p>
+            <ul>
+                <li>Rapid prototyping for mobile games/applications</li>
+                <li>Full Stack web development</li>
+                <li>Game development</li>
+            </ul>
           </div>
           <div class="info-box animated">
             <h6>MQ Spectrum</h6>
-            <p>2016</p>
-            <p>Intern : Assisted with e-learning portal development and quality assurance</p>
+            <p>May 2016 - Aug 2016</p>
+            <p>Intern</p>
+            <ul>
+                <li>Assisted in the development process of a web e-learning portal by participating in daily meetings and performing reviews</li>
+                <li>Handled the workflow and quality assurance of software development by carrying out manual tests and writing automated test scripts, ensuring quality and bug-free code</li>
+            </ul>
           </div>
           <div class="info-box animated">
-            <h6>Nanyang Polytechnic</h6>
-            <p>2014 - 2017</p>
-            <p>Diploma in Games Development & Technology</p>
+            <h6>Singapore Armed Forces (National Service)</h6>
+            <p>Jul 2017 - Jul 2019</p>
+            <p>Maintenance Engineering Support - Electronics Technician</p>
+            <ul>
+                <li>Assisted other army units in a local army exercise through the maintenance and troubleshooting of various vehicular systemssuccessfully</li>
+                <li>Received the Best Soldier of the month award in June 2018 through effective problem solving when carrying out regular maintenance activities</li>
+            </ul>
           </div>
         </div>
       </div>
